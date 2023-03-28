@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?attr/materialCardViewElevatedStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/medium_100"
+    tools:layout_width="200dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_character_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/small_125"
+            android:layout_marginTop="@dimen/small_125"
+            android:contentDescription="@string/character_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@id/flow_name_age_new"
+            app:layout_constraintDimensionRatio="wh, 3:4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="?attr/shapeAppearanceCornerMedium"
+            tools:background="?attr/colorPrimaryContainer" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/flow_name_age_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/medium_100"
+            android:layout_marginVertical="@dimen/small_200"
+            app:constraint_referenced_ids="tv_character_name_age, indicator_new"
+            app:flow_horizontalGap="@dimen/small_125"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_character_image" />
+
+        <TextView
+            android:id="@+id/tv_character_name_age"
+            style="@style/Widget.Tyander.TextView.SingleLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceTitleMedium"
+            tools:ignore="MissingConstraints"
+            tools:text="Ariya, 18" />
+
+        <View
+            android:id="@+id/indicator_new"
+            android:layout_width="@dimen/small_125"
+            android:layout_height="@dimen/small_125"
+            android:background="@drawable/bg_corners_full"
+            android:backgroundTint="?attr/colorPrimary"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.match.details.MatchDetailsFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_content_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/medium_200" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_content_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/medium_200" />
+
+    <ImageView
+        android:id="@+id/iv_character_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/medium_200"
+        android:contentDescription="@string/character_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/tv_character_name_age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="?attr/colorPrimaryContainer" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abl_toolbar"
+        style="@style/Widget.Tyander.AppBarLayout.Transparent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.Tyander.Toolbar.Transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/match_details" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/cpi_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toTopOf="@id/tv_character_name_age"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_character_name_age"
+        style="@style/Widget.Tyander.TextView.SingleLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_100"
+        android:textAppearance="?attr/textAppearanceDisplaySmall"
+        app:layout_constraintBottom_toTopOf="@id/flow_character_biography"
+        app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+        app:layout_constraintStart_toStartOf="@id/gl_content_start"
+        tools:text="Ariya, 18" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_character_biography"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_200"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="tv_character_address, tv_character_email, tv_character_phone"
+        app:flow_verticalGap="@dimen/small_200"
+        app:layout_constraintBottom_toTopOf="@id/tv_match_time"
+        app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+        app:layout_constraintStart_toStartOf="@id/gl_content_start" />
+
+    <TextView
+        android:id="@+id/tv_character_address"
+        style="@style/Widget.Tyander.TextView.Biography"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:drawableStartCompat="@drawable/ic_location_outlined"
+        tools:ignore="MissingConstraints"
+        tools:text="Swaziland, South Elyssa" />
+
+    <TextView
+        android:id="@+id/tv_character_email"
+        style="@style/Widget.Tyander.TextView.Biography"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:drawableStartCompat="@drawable/ic_email_outlined"
+        tools:ignore="MissingConstraints"
+        tools:text="ariya.reinger@email.com" />
+
+    <TextView
+        android:id="@+id/tv_character_phone"
+        style="@style/Widget.Tyander.TextView.Biography"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:drawableStartCompat="@drawable/ic_phone_outlined"
+        tools:ignore="MissingConstraints"
+        tools:text="+2361912588771" />
+
+    <TextView
+        android:id="@+id/tv_match_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_200"
+        android:textAppearance="?attr/textAppearanceLabelLarge"
+        android:textColor="?attr/colorSurfaceVariant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+        app:layout_constraintStart_toStartOf="@id/gl_content_start"
+        tools:text="Matched on June, 18th" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_chat"
+        style="?attr/floatingActionButtonPrimaryStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/medium_200"
+        android:contentDescription="@string/create_chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gl_content_end"
+        app:srcCompat="@drawable/ic_chat_outlined" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

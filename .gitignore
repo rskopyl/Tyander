@@ -1,0 +1,13 @@
+/.idea
+/.gradle
+/build
+/captures
+*.iml
+*.gradle
+*.DS_Store
+*.externalNativeBuild
+*.cxx
+local.properties
+
+/buildSrc/build
+/buildSrc/src/main/java/Secret.kt

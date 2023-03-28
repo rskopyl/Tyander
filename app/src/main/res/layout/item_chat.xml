@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorSurface"
+    android:padding="@dimen/small_200">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_character_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/character_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="wh, 1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="?attr/shapeAppearanceCornerFull"
+        tools:background="?attr/colorPrimaryContainer" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow_name_age_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/small_125"
+        android:orientation="vertical"
+        app:constraint_referenced_ids="tv_character_name_age, tv_last_message_text"
+        app:flow_verticalGap="@dimen/small_100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_last_message_time"
+        app:layout_constraintStart_toEndOf="@id/iv_character_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_character_name_age"
+        style="@style/Widget.Tyander.TextView.SingleLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceTitleMedium"
+        android:textColor="?attr/colorOnSurface"
+        tools:ignore="MissingConstraints"
+        tools:text="Ariya, 18" />
+
+    <TextView
+        android:id="@+id/tv_last_message_text"
+        style="@style/Widget.Tyander.TextView.SingleLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="?attr/colorOnSurface"
+        tools:ignore="MissingConstraints"
+        tools:text="Hi, how are you?" />
+
+    <TextView
+        android:id="@+id/tv_last_message_time"
+        style="@style/Widget.Tyander.TextView.SingleLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="?attr/colorOnSurface"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_character_name_age"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="12:00" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

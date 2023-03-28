@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme -->
+    <attr name="shapeAppearanceCornerFull" format="reference" />
+
+    <!-- Styleable -->
+    <declare-styleable name="MessageView">
+        <attr name="gap" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TextView -->
+    <style name="Widget.Tyander.TextView.SingleLine" parent="Widget.AppCompat.TextView">
+        <item name="android:ellipsize">end</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="Widget.Tyander.TextView.Empty.Title" parent="Widget.AppCompat.TextView">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:textAppearance">?attr/textAppearanceTitleMedium</item>
+    </style>
+
+    <style name="Widget.Tyander.TextView.Empty.Hint" parent="Widget.AppCompat.TextView">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">?attr/colorOutline</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodyMedium</item>
+    </style>
+
+    <style name="Widget.Tyander.TextView.Biography" parent="Widget.Tyander.TextView.SingleLine">
+        <item name="android:drawablePadding">@dimen/small_125</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="drawableTint">?attr/colorOnBackground</item>
+    </style>
+
+    <!-- Button -->
+    <style name="Widget.Tyander.ImageButton.Search" parent="Widget.AppCompat.ImageButton">
+        <item name="android:layout_width">@dimen/large_100</item>
+        <item name="android:layout_height">@dimen/large_100</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:padding">@dimen/medium_100</item>
+        <item name="android:background">@drawable/bg_corners_full</item>
+    </style>
+
+    <!-- MessageView -->
+    <style name="Widget.Tyander.Message" parent="">
+        <item name="android:paddingStart">@dimen/small_125</item>
+        <item name="android:paddingEnd">@dimen/small_125</item>
+        <item name="android:paddingTop">@dimen/small_100</item>
+        <item name="android:paddingBottom">@dimen/small_100</item>
+        <item name="android:background">@drawable/bg_corners_s200</item>
+        <item name="gap">@dimen/small_100</item>
+    </style>
+
+    <!-- AppBarLayout -->
+    <style name="Widget.Tyander.AppBarLayout.Transparent" parent="Widget.Material3.AppBarLayout">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- Toolbar -->
+    <style name="Widget.Tyander.Toolbar.Transparent" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- TextAppearance - Display -->
+    <style name="TextAppearance.Tyander.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <style name="TextAppearance.Tyander.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <style name="TextAppearance.Tyander.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <!-- TextAppearance - Headline -->
+    <style name="TextAppearance.Tyander.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <style name="TextAppearance.Tyander.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <style name="TextAppearance.Tyander.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <!-- TextAppearance - Title -->
+    <style name="TextAppearance.Tyander.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <style name="TextAppearance.Tyander.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/quicksand_medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Tyander.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/quicksand_light</item>
+    </style>
+
+    <!-- TextAppearance - Body -->
+    <style name="TextAppearance.Tyander.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/quicksand_light</item>
+    </style>
+
+    <style name="TextAppearance.Tyander.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/quicksand_light</item>
+    </style>
+
+    <style name="TextAppearance.Tyander.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/quicksand_light</item>
+    </style>
+
+    <!-- TextAppearance - Label -->
+    <style name="TextAppearance.Tyander.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <style name="TextAppearance.Tyander.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/quicksand_medium</item>
+    </style>
+
+    <style name="TextAppearance.Tyander.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/quicksand_medium</item>
+    </style>
+</resources>

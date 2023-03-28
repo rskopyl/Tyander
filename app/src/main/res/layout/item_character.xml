@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        style="?attr/materialCardViewElevatedStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/medium_200"
+        app:cardCornerRadius="@dimen/medium_150"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="wh, 9:16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/small_200">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_character_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/character_image"
+                android:scaleType="centerCrop"
+                app:shapeAppearance="?attr/shapeAppearanceCornerLarge"
+                tools:background="?attr/colorPrimaryContainer" />
+
+            <TextView
+                android:id="@+id/tv_character_name_age"
+                style="@style/Widget.Tyander.TextView.SingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/small_125"
+                android:layout_marginTop="@dimen/medium_100"
+                android:textAppearance="?attr/textAppearanceHeadlineMedium"
+                tools:text="Ariya, 18" />
+
+            <TextView
+                android:id="@+id/tv_character_address"
+                style="@style/Widget.Tyander.TextView.SingleLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/small_125"
+                android:layout_marginBottom="@dimen/small_125"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                tools:text="Swaziland, South Elissa" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

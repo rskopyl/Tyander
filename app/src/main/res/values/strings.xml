@@ -1,0 +1,41 @@
+<resources>
+    <!-- Shared -->
+    <string name="app_name">Tyander</string>
+    <string name="delete">Delete</string>
+    <string name="delete_all">Delete All</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Search -->
+    <string name="search">Search</string>
+    <string name="theme">Theme</string>
+    <string name="character_image">Character Image</string>
+    <string name="name_age">%1$s, %2$d</string>
+    <string name="country_city">%1$s, %2$s</string>
+    <string name="error">Error</string>
+    <string name="skip">Skip</string>
+    <string name="like">Like</string>
+
+    <!-- Match List -->
+    <string name="matches">Matches</string>
+    <string name="no_matches_yet">No matches yet</string>
+    <string name="no_matches_yet_hint">Visit Search screen and click \u00ABSave\u00BB button to create your first match</string>
+    <string name="delete_all_matches">Delete all matches?</string>
+    <string name="delete_all_matches_hint">Matches and chats associated with them will be permanently removed.</string>
+
+    <!-- Match Details -->
+    <string name="create_chat">Create Chat</string>
+    <string name="matched_on_value">Matched on %1$s</string>
+    <string name="delete_match">Delete this match?</string>
+    <string name="delete_match_hint">Chat and messages associated with it will be permanently removed.</string>
+
+    <!-- Chat List -->
+    <string name="chats">Chats</string>
+    <string name="no_chats_yet">No chats yet</string>
+    <string name="no_chats_yet_hint">Visit Matches > Details screen and click \u00ABChat\u00BB button to start your first chat</string>
+    <string name="delete_all_chats">Delete all chats?</string>
+    <string name="delete_all_chats_hint">Chats and messages associated with them will be permanently removed.</string>
+
+    <!-- Chat Messaging -->
+    <string name="message">Message</string>
+</resources>
